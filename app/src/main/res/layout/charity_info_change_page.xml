@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimary"
+                android:textOff="최신순"
+                android:textOn="인기순"
+                android:textColor="@android:color/white"
+                android:id="@+id/sort_btn"/>
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimary"
+                android:textOff="전체"
+                android:textOn="추천중"
+                android:textColor="@android:color/white"
+                android:visibility="invisible"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:text="저장"
+                android:textColor="@android:color/white"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/listViewDivider"
+                android:dividerHeight="1dp"
+                android:id="@+id/list_view"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:id="@+id/empty_view"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="NFC 태그 등록"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="1회 기부 금액"
+                android:textColorHint="#4d000000"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:inputType="number"
+                android:id="@+id/amount_edt"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical|right"
+                android:background="@drawable/round_corner_accent"
+                android:layout_marginRight="20dp"
+                android:text="확인"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:id="@+id/generate_btn"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="NFC 태그를 접촉해주세요."
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:visibility="invisible"
+                android:id="@+id/message_text_view"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <kr.co.t_woori.good_donation_admin.utilities.ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:fillViewport="true"
+        android:id="@+id/scroll_view">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/container">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/colorPrimary">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="프로젝트 등록"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"/>
+
+                </FrameLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:hint="프로젝트명"
+                    android:gravity="center"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/border_primary_1dp"
+                    android:inputType="textPersonName"
+                    android:maxLength="20"
+                    android:id="@+id/name_edt">
+
+                    <requestFocus/>
+
+                </EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:hint="프로젝트 한줄 소개"
+                    android:gravity="center"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/border_primary_1dp"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:id="@+id/intro_edt"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:hint="목표 금액"
+                    android:gravity="center"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/border_primary_1dp"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:id="@+id/goal_edt"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:hint="프로젝트 감사 문구\n(최대 6줄)"
+                    android:gravity="center"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/border_primary_1dp"
+                    android:inputType="textMultiLine"
+                    android:maxLines="6"
+                    android:id="@+id/appreciation_edt"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="20dp"
+                android:paddingBottom="20dp"
+                android:gravity="bottom"
+                android:layout_below="@+id/container"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner_primary"
+                    android:layout_marginRight="10dp"
+                    android:text="취소"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:id="@+id/cancel_btn"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner_primary"
+                    android:text="완료"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:id="@+id/done_btn"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </kr.co.t_woori.good_donation_admin.utilities.ScrollView>
+
+</layout>

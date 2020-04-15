@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.co.t_woori.good_donation_admin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".login.SplashActivity"
+            android:screenOrientation="portrait" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
+            android:name=".signup.SignupAgreementActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".signup.SignupFirstActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".signup.SignupSecondActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".signup.SignupThirdActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".master.MasterMainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".place.PlaceMainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".master.approval.ApprovalPlaceActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".place.tag.QrActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".setting.SettingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".place.tag.NfcActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".master.charity.CharitySignupActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".master.charity.ProjectSignupActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".master.charity.RecommendCharityActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".master.place.ManagePlaceActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".master.charity.ManageCharityActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".communication.ImageUploader"/>
+
+        <activity
+            android:name=".master.inquiry.InquiryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.andremion.louvre.home.GalleryActivity"
+            android:theme="@style/AppTheme.Louvre.Light" />
+        <activity
+            android:name="com.andremion.louvre.preview.PreviewActivity"
+            android:theme="@style/AppTheme.Louvre.Preview" />
+
+    </application>
+
+</manifest>

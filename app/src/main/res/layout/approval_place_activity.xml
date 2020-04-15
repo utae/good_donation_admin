@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:id="@+id/test">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_back_white"
+                android:id="@+id/back_btn"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="기부매장 가입승인"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border_primary_1dp"
+                    android:text="전체선택"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/all_select_btn"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border_primary_1dp"
+                    android:text="선택해제"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/all_unselect_btn"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border_primary_1dp"
+                    android:text="승인"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/approve_btn"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border_primary_1dp"
+                    android:text="거부"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/disapprove_btn"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/listViewDivider" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:divider="@color/listViewDivider"
+            android:dividerHeight="1dp"
+            android:choiceMode="multipleChoice"
+            android:id="@+id/place_list_view"/>
+
+    </LinearLayout>
+    
+</layout>

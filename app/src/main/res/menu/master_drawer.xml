@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="기부매장 가입승인"
+        android:id="@+id/approval_place" />
+
+    <item
+        android:title="기부처 등록"
+        android:id="@+id/charity_signup" />
+
+    <item
+        android:title="기부프로젝트 등록"
+        android:id="@+id/project_signup" />
+
+    <item
+        android:title="추천 기부처/프로젝트 관리"
+        android:id="@+id/recommend_charity" />
+
+    <item
+        android:title="기부매장 관리"
+        android:id="@+id/manage_place" />
+
+    <item
+        android:title="기부처 관리"
+        android:id="@+id/manage_charity"/>
+
+    <item
+        android:title="문의 내역 관리"
+        android:id="@+id/manage_inquiry"/>
+
+    <item
+        android:title="설정"
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_setting"/>
+
+</menu>

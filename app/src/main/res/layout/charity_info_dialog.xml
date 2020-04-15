@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border_primary_1dp"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:text="기부처 정보"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:text="기부처명"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:background="@drawable/round_corner_primary"
+                android:id="@+id/name_edt"
+                android:inputType="textPersonName"
+                android:maxLength="20"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="기부처 한줄 소개"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_corner_primary"
+            android:inputType="text"
+            android:maxLength="20"
+            android:id="@+id/intro_edt"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="기부처 감사 문구"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_corner_primary"
+            android:inputType="textMultiLine"
+            android:maxLength="250"
+            android:maxLines="10"
+            android:id="@+id/appreciation_edt"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/border_primary_1dp"
+                android:text="취소"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/cancel_btn"/>
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:background="@drawable/border_primary_1dp"
+                android:layout_gravity="right"
+                android:text="수정"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/save_btn"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>
